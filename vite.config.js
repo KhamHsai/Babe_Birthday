@@ -10,6 +10,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  // For GitHub Pages deployment - update 'your-repo-name' with your actual repo name
-  base: './',
+  base: '/Babe_Birthday/',
 })
