@@ -47,15 +47,17 @@ const INITIAL_PHOTOS = [
   { id: 13, url: "/Babe_Birthday/photos/photo13.jpg", caption: "Together" },
   { id: 14, url: "/Babe_Birthday/photos/photo14.jpg", caption: "Together" },
   { id: 15, url: "/Babe_Birthday/photos/photo15.jpg", caption: "Together" },
-  { id: 16, url: "/Babe_Birthday/photos/photo16.jpg", caption: "Together" },
+  { id: 16, url: "/Babe_Birthday/photos/photo16.png", caption: "Together" },
   { id: 17, url: "/Babe_Birthday/photos/photo17.jpg", caption: "Together" },
   { id: 18, url: "/Babe_Birthday/photos/photo18.png", caption: "Together" },
   { id: 19, url: "/Babe_Birthday/photos/photo19.jpg", caption: "Together" },
   { id: 20, url: "/Babe_Birthday/photos/photo20.jpg", caption: "Together" },
   { id: 21, url: "/Babe_Birthday/photos/photo21.jpg", caption: "Together" },
-  { id: 22, url: "/Babe_Birthday/photos/photo22.png", caption: "Together" },
+  { id: 22, url: "/Babe_Birthday/photos/photo22.jpg", caption: "Together" },
   { id: 23, url: "/Babe_Birthday/photos/photo23.png", caption: "Together" },
   { id: 24, url: "/Babe_Birthday/photos/photo24.jpg", caption: "Together" },
+  { id: 25, url: "/Babe_Birthday/photos/photo25.jpg", caption: "Together" },
+
   
   // Add more photos here - just put them in public/photos/ folder
 ];
