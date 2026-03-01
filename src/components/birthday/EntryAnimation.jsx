@@ -136,7 +136,7 @@ export default function EntryAnimation({ onComplete }) {
                   marginTop: "0.5rem",
                 }}
               >
-                Happy Birthday, Aiko 🎂
+                Happy Birthday, Babe 🎂
               </motion.p>
 
               <motion.div

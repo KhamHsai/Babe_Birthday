@@ -71,9 +71,9 @@ export default function PhotoGallery({ photos, onPhotoAdded }) {
         </div>
       </motion.div>
 
-      {/* Photo grid */}
+      {/* Photo grid - Pinterest style masonry */}
       {photos.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4">
           {photos.map((photo, idx) => (
             <motion.div
               key={photo.id}
@@ -83,9 +83,8 @@ export default function PhotoGallery({ photos, onPhotoAdded }) {
               transition={{ duration: 0.5, delay: idx * 0.07 }}
               whileHover={{ scale: 1.04, zIndex: 10 }}
               onClick={() => openLightbox(idx)}
-              className="relative cursor-pointer overflow-hidden rounded-xl"
+              className="relative cursor-pointer overflow-hidden rounded-xl mb-3 md:mb-4 break-inside-avoid"
               style={{
-                aspectRatio: idx % 5 === 0 ? "1/1.3" : "1/1",
                 border: "1px solid rgba(255,215,0,0.2)",
                 boxShadow: "0 4px 30px rgba(0,0,0,0.4)",
               }}
@@ -93,7 +92,8 @@ export default function PhotoGallery({ photos, onPhotoAdded }) {
               <img
                 src={photo.url}
                 alt={photo.caption || `Memory ${idx + 1}`}
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                className="w-full block transition-transform duration-500 hover:scale-110"
+                style={{ display: 'block' }}
               />
               <div
                 className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"

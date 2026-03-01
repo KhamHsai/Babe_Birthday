@@ -30,19 +30,41 @@ const slideVariants = {
   }),
 };
 
-// Add your photo URLs here (use Imgur, ImgBB, or any image hosting)
+// Add your photo URLs here - photos are in public/photos/ folder
 const INITIAL_PHOTOS = [
-  { id: 1, url: "https://i.imgur.com/EXAMPLE1.jpg", caption: "Beautiful moment" },
-  { id: 2, url: "https://i.imgur.com/EXAMPLE2.jpg", caption: "Our memories" },
-  { id: 3, url: "https://i.imgur.com/EXAMPLE3.jpg", caption: "Together" },
-  // Add more photos here - upload to imgur.com and paste the direct image links
+  { id: 1, url: "/Babe_Birthday/photos/photo1.jpg", caption: "Beautiful moment" },
+  { id: 2, url: "/Babe_Birthday/photos/photo2.jpg", caption: "Our memories" },
+  { id: 3, url: "/Babe_Birthday/photos/photo3.jpg", caption: "Together" },
+  { id: 4, url: "/Babe_Birthday/photos/photo4.jpg", caption: "Together" },
+  { id: 5, url: "/Babe_Birthday/photos/photo5.jpg", caption: "Together" },
+  { id: 6, url: "/Babe_Birthday/photos/photo6.jpg", caption: "Together" },
+  { id: 7, url: "/Babe_Birthday/photos/photo7.jpg", caption: "Together" },
+  { id: 8, url: "/Babe_Birthday/photos/photo8.jpg", caption: "Together" },
+  { id: 9, url: "/Babe_Birthday/photos/photo9.jpg", caption: "Together" },
+  { id: 10, url: "/Babe_Birthday/photos/photo10.jpg", caption: "Together" },
+  { id: 11, url: "/Babe_Birthday/photos/photo11.jpg", caption: "Together" },
+  { id: 12, url: "/Babe_Birthday/photos/photo12.jpg", caption: "Together" },
+  { id: 13, url: "/Babe_Birthday/photos/photo13.jpg", caption: "Together" },
+  { id: 14, url: "/Babe_Birthday/photos/photo14.jpg", caption: "Together" },
+  { id: 15, url: "/Babe_Birthday/photos/photo15.jpg", caption: "Together" },
+  { id: 16, url: "/Babe_Birthday/photos/photo16.jpg", caption: "Together" },
+  { id: 17, url: "/Babe_Birthday/photos/photo17.jpg", caption: "Together" },
+  { id: 18, url: "/Babe_Birthday/photos/photo18.png", caption: "Together" },
+  { id: 19, url: "/Babe_Birthday/photos/photo19.jpg", caption: "Together" },
+  { id: 20, url: "/Babe_Birthday/photos/photo20.jpg", caption: "Together" },
+  { id: 21, url: "/Babe_Birthday/photos/photo21.jpg", caption: "Together" },
+  { id: 22, url: "/Babe_Birthday/photos/photo22.png", caption: "Together" },
+  { id: 23, url: "/Babe_Birthday/photos/photo23.png", caption: "Together" },
+  { id: 24, url: "/Babe_Birthday/photos/photo24.jpg", caption: "Together" },
+  
+  // Add more photos here - just put them in public/photos/ folder
 ];
 
 export default function Home() {
   const [photos, setPhotos] = useState(() => {
-    // Load from localStorage if available
-    const saved = localStorage.getItem('birthday-photos');
-    return saved ? JSON.parse(saved) : INITIAL_PHOTOS;
+    // Clear old localStorage and use INITIAL_PHOTOS
+    localStorage.removeItem('birthday-photos');
+    return INITIAL_PHOTOS;
   });
   const [entryDone, setEntryDone] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);

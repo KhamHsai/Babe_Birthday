@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from "framer-motion";
 import * as THREE from "three";
 
 const wishes = [
-  { emoji: "🌟", text: "May your 20s be filled with adventures that take your breath away" },
-  { emoji: "💫", text: "You are stepping into the most radiant decade of your life" },
-  { emoji: "🌸", text: "Every dream you've whispered to the night sky — may they all bloom" },
-  { emoji: "💎", text: "You are rare, luminous, and endlessly loved" },
-  { emoji: "🦋", text: "20 years of magic, and the best chapters haven't even been written yet" },
-  { emoji: "🥂", text: "Here's to you, Aiko — the most beautiful soul I know" },
-  { emoji: "🌙", text: "May love find you in every corner of your journey" },
-  { emoji: "✨", text: "Happy 20th Birthday, my love — this one is all for you" },
+  { emoji: "🌟", text: "May your 20s bring you everything you've ever dreamed of — and more ✦" },
+  { emoji: "💫", text: "You've been amazing at 19 — I can't wait to see who you become at 20 ✦" },
+  { emoji: "🌸", text: "Every dream you've whispered to the night sky — may they all bloom ✦" },
+  { emoji: "💎", text: "You already have the confidence, the mindset, and the spark — now it’s just your time to shine ✦" },
+  { emoji: "🦋", text: "20 years of you — and somehow you keep getting more beautiful ✦" },
+  { emoji: "🥂", text: "Here's to the girl who makes every day better just by being in it ✦" },
+  { emoji: "🌙", text: "May the world be as kind to you as you are to everyone else ✦" },
+  { emoji: "✨", text: "Happy 20th Birthday, Babe — this day is yours, but my heart is too ✦" },
 ];
 
 export default function CakeScene() {
@@ -438,7 +438,7 @@ export default function CakeScene() {
               >
                 "Here's to 20 years of being the most wonderful person in my world — and to every beautiful year that follows."
               </p>
-              <p className="mt-4 text-lg" style={{ color: "#c9a84c" }}>— Always yours 💛</p>
+              <p className="mt-4 text-lg" style={{ color: "#c9a84c" }}>— With full of my heart 💛</p>
             </motion.div>
           </motion.div>
         )}

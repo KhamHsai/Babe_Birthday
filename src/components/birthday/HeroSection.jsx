@@ -39,7 +39,7 @@ export default function HeroSection({ onNext }) {
         className="text-gold-400 text-lg tracking-[0.4em] uppercase mb-4 font-light"
         style={{ color: "#c9a84c", letterSpacing: "0.4em" }}
       >
-        For my dearest
+        For my lovely babe
       </motion.p>
 
       {/* Main name */}
@@ -103,7 +103,7 @@ export default function HeroSection({ onNext }) {
         className="max-w-xl text-lg md:text-xl leading-relaxed font-light italic"
         style={{ color: "#e8d5b0" }}
       >
-        "Every day with you is a celebration, babe — but today, the whole world celebrates you."
+        "Every moment with you feels special, babe — but today is all about celebrating you."
       </motion.p>
 
       {/* Next cue */}

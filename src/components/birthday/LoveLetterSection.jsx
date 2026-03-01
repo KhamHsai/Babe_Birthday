@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Heart, Star } from "lucide-react";
 
 const reasons = [
-  { icon: "✨", text: "Your smile lights up every room you walk into" },
-  { icon: "💫", text: "The way you laugh makes everything feel right" },
-  { icon: "🌙", text: "You make ordinary moments feel magical" },
-  { icon: "🌸", text: "Your kindness and warmth touch everyone around you" },
-  { icon: "💎", text: "You are rare — truly one of a kind, babe" },
-  { icon: "🦋", text: "Watching you grow into the woman you are is breathtaking" },
+  { icon: "✨", text: "You always say you bring luck wherever you go — and honestly, I think you might be right" },
+  { icon: "💫", text: "I love how your laugh can turn a bad moment into a better one" },
+  { icon: "🌙", text: "With you, even simple moments feel exciting" },
+  { icon: "🌸", text: "You act like you don’t care, but you always do" },
+  { icon: "💎", text: "You are truly and very special to me, babe" },
+  { icon: "🦋", text: "Every moment with you feels meaningful" },
 ];
 
 export default function LoveLetterSection() {
@@ -35,7 +35,7 @@ export default function LoveLetterSection() {
             fontFamily: "'Georgia', serif",
           }}
         >
-          Why I Love You
+          From My Heart
         </h2>
         <div className="flex items-center gap-4 justify-center">
           <div className="h-px w-20" style={{ background: "linear-gradient(to right, transparent, #FFD700)" }} />
@@ -71,17 +71,16 @@ export default function LoveLetterSection() {
         </p>
         <br />
         <p className="leading-relaxed text-center md:text-lg" style={{ color: "#c8b89a" }}>
-          On this special day, I want you to know that you are everything to me. 
-          Every morning I wake up grateful that you're mine. You are my calm, my joy, 
-          my home. Watching you celebrate another year of this beautiful life you live 
-          fills my heart with so much pride.
+          On this special day, I just want you to know how much you mean to me. 
+          I’m grateful for every moment I get to share with you and for the way you make good days even better.
+          You have a way of being yourself so naturally, and that’s something I truly admire. 
         </p>
         <br />
         <p className="leading-relaxed text-center md:text-lg" style={{ color: "#c8b89a" }}>
-          Today and every day, I choose you. Happy Birthday, babe. 🥂
+          Happy Birthday, babe. 🥂
         </p>
         <br />
-        <p className="text-right italic" style={{ color: "#c9a84c" }}>— Always yours 💛</p>
+        <p className="text-right italic" style={{ color: "#c9a84c" }}>— With all my heart 💛</p>
       </motion.div>
 
       {/* Reasons grid */}
